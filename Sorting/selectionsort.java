@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class selectionsort {
     public static void main(String[] args) {
         
@@ -13,13 +12,14 @@ public class selectionsort {
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
+        }
         
         selection( arr,n);
         System.out.println("sorted array is:");
         for(int k=0;k<n;k++){
-            System.out.println(arr[i]);
+            System.out.println(arr[k]);
         }
-    }
+    
     
 }
     static void selection(int[] arr,int n){

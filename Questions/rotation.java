@@ -17,3 +17,5 @@ public class rotation {
     }
 
 }
+//if aksed to rotate by k
+//use k in place of 1 and

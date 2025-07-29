@@ -5,7 +5,7 @@ public class rotation {
         rotaionByLeft(arr,5);
     }
     static void rotaionByLeft(int[] arr,int n){
-        temp=arr[0];
+        int temp=arr[0];
         for(int i=0;i<n;i++){
             arr[i-1]=arr[i];
         }

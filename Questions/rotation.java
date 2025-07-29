@@ -2,7 +2,11 @@
 public class rotation {
     public static void main(String[] args){
         int[] arr={1,2,3,4,5};
-        rotaionByLeft(arr,5);
+        int n=arr.length;
+        rotaionByLeft(arr,n);
+        for(int num : arr){
+            System.out.print(num + " ");
+        }
     }
     static void rotaionByLeft(int[] arr,int n){
         int temp=arr[0];

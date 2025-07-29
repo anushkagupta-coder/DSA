@@ -9,14 +9,14 @@ public class largest {
         int[] arr=new int[n];
 
         System.out.println("enter elements of array");
-        for(int i=0;i<n;i++){
-            arr=scanner.nextInt();
+        for(int i=0 ; i <  n;i++){
+            arr[i]=scanner.nextInt();
         }
-        largest(arr);
+        largestelment(arr);
         
     }
-    static void largest(int[] arr){
-        largest=arr[0];
+    static void largestelment(int[] arr){
+        int largest=arr[0];
         for(int i=0;i<n;i++){
             if (arr[i]>largest){
                 largest=arr[i];

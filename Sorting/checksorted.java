@@ -3,7 +3,7 @@ public class checksorted {
         int[] arr={1,2,3,4};
         int n=arr.length;
         checksorted(arr,n);
-        System.out.println("checked");
+        
     }
     static boolean checksorted(int[] arr,int n)
     {

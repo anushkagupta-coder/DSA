@@ -1,10 +1,14 @@
-//THIS PROGRAM IS TO SHIFT ALL THE ZEROS TO THE END
+
 public class movezeros {
     public static void main(String[] args) {
-        
-
+        int[] arr={2,3,0,6,8,0,0,1};
+        int n=arr.length;
+        movezeros(arr, n);
+        for(int i=0;i<n;i++){
+            System.out.println(arr[i]);
+        }
     }
-    static int movezeros(int[] arr,int n){
+    static void movezeros(int[] arr,int n){
         int j=-1;
         for(int i=0;i<n;i++){
             if(arr[i]==0){
@@ -13,7 +17,7 @@ public class movezeros {
             }
         }
         if (j==-1){
-            return a;
+            System.out.println(arr[j]);
         }
         for(int i=j+1;i<n;i++){
             int temp=arr[i];

@@ -12,11 +12,13 @@ public class secondlargest {
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
+
         }
+        secondlargest(arr,n);
     }
     static void secondlargest(int[] arr,int n){
-        int secondlargest;
-        int largest;
+        int secondlargest=-1;
+        int largest=arr[0];
         for(int i=1;i<n;i++){
             if(arr[i]>largest){
                 secondlargest=largest;

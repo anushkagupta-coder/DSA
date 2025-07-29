@@ -18,4 +18,4 @@ public class rotation {
 
 }
 //if aksed to rotate by k
-//use k in place of 1 and
+//theoptimal solution is to reverse 3 times first 0 to k and then k+1 to end andthen reverse the whole string;

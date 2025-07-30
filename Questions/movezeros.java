@@ -20,10 +20,13 @@ public class movezeros {
             System.out.println(arr[j]);
         }
         for(int i=j+1;i<n;i++){
+            if(arr[i]!=0){
             int temp=arr[i];
             arr[i]=arr[j];
             arr[j]=temp;
+            
             j++;
         }
+    }
     }
 }

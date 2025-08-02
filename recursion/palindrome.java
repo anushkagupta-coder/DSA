@@ -5,7 +5,7 @@ public class palindrome {
     public static void main(String[] args) {
         int n;
         
-        String str="naman";
+        String str1="naman";
         String str2="ANUSHKA";
         String str3="aba";
         System.out.println(check(str,0));

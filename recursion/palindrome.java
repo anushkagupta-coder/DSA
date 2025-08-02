@@ -1,6 +1,6 @@
 
 
-
+//TO CHECK IF THE GIVEN STRING IS A PALINDROME
 public class palindrome {
     public static void main(String[] args) {
         int n;

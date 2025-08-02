@@ -4,6 +4,6 @@ public class missingnum {
 
     }
     static void missing(int[] arr,int n){
-
+        
     }
 }

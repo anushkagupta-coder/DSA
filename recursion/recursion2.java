@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-// to print from 1-N using recusrion
-
+// to print from 1-N USING RECURSION
 public class recursion2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

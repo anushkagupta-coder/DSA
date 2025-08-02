@@ -1,4 +1,4 @@
-//factorial usning recursion
+//FACTORIAL USING RECURSION
 import java.util.Scanner;
 public class recursion5 {
     public static void main(String[] args) {

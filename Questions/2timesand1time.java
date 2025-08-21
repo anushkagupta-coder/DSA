@@ -7,7 +7,7 @@ public class 2timesand1time {
         for(int i=0;i<nums.length;i++){
             xorr=xorr ^ nums[i] ;
         }
-        return xorr;
+        return xorr ;
     }
 }
 }

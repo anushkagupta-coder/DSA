@@ -3,7 +3,7 @@
 public class twiceand1time {
     public static void main(String[] args) {
         int[] nums={1,1,2,3,3,4,4};
-        System.out.printnl(singleNumber(nums));
+        System.out.println(singleNumber(nums));
     }
     
     static int singleNumber(int[] nums) {

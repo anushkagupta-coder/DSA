@@ -1,3 +1,4 @@
+//this program is to find out sun of two numbers be equal to k;
 public class twosum {
     public static String twoSum(int n, int []arr, int target) {
         for (int i = 0; i < n; i++) {

@@ -1,7 +1,7 @@
 //The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 public class majorityele {
     public static void main(String[] args) {
-        int[] nums={1,1,1,0,2,3};
+        int[] nums={3,2,3};
         System.out.println(majorityElement(nums));
     }
     public static int majorityElement(int[] nums) {

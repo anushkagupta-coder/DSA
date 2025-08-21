@@ -2,7 +2,7 @@
 public class majorityele {
     public static void main(String[] args) {
         int[] nums={1,1,1,0,2,3};
-        System.out.println(majorityElement(nums))
+        System.out.println(majorityElement(nums));
     }
     public static int majorityElement(int[] nums) {
         int count;

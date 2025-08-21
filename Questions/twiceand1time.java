@@ -1,6 +1,6 @@
 
 //this code is to find element which will occur only once while all other twice
-public class 2timesand1time {
+public class twiceand1time {
     public static void main(String[] args) {
         int[] nums={1,1,2,3,3,4,4};
         singleNumber(nums);

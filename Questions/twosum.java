@@ -10,10 +10,10 @@ public class twosum {
 
     public static void main(String args[]) {
         int n = 5;
-        int[] arr = {2, 6, 5, 8, 11};
+        int[] arr = {2, 6, 5,8,11};
         int target = 14;
         String ans = twoSum(n, arr, target);
-        System.out.println("This is the answer for variant 1: " + ans);
+        System.out.println(ans);
     }
 
 }

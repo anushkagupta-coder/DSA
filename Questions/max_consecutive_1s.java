@@ -1,6 +1,6 @@
 public class max_consecutive_1s {
     public static void main (String[] args){
-        int[] nums = {1, 1, 0, 1, 1, 1};
+        int[] nums = {1, 1, 0, 1, 1,1,1, 1};
         System.out.println(findMaxConsecutiveOnes(nums));
     }
     static int findMaxConsecutiveOnes(int[] nums) {

@@ -2,7 +2,7 @@
 public class rearrangebysign {
     public static void main(String[] args) {
         int[] arr={1,-2,-3,2,3,-1};
-        int[] ans =new int[nums.length];
+        int[] ans =new int[arr.length];
         int posIndex=0;
         int negIndex=1;
 

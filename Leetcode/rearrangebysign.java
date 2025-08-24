@@ -7,7 +7,7 @@ public class rearrangebysign {
         int negIndex=1;
 
     }
-    static int rearrange(int[] arr){
+    static int[] rearrange(int[] arr){
         int[] ans =new int[arr.length];
         int posIndex=0;
         int negIndex=1;

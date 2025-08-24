@@ -1,9 +1,8 @@
-import java.util.Arrays;
-
+import java.util.*;
 public class rearrangebysign {
     public static void main(String[] args) {
         int[] arr={1,-2,-3,2,3,-1};
-        int[] ans =new int[arr.length];
+        int[] ans =rearrange(arr);
         int posIndex=0;
         int negIndex=1;
         System.out.println(Arrays.toString(ans));

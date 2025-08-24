@@ -1,4 +1,7 @@
 
+import java.util.Arrays;
+
+
 
 public class rearrangebysign {
     public static void main(String[] args) {
@@ -7,7 +10,7 @@ public class rearrangebysign {
         n=arr.length;
         int posIndex=0,negIndex=1;
 
-        System.out.println(rearrange(arr));
+        System.out.println(Arrays.toString(ans));
     }
     static int rearrange(int[] arr){
         for(int i=0;i<arr.length;i++){
@@ -20,5 +23,6 @@ public class rearrangebysign {
                 posIndex+=2;
             }
         }
+        return ans;
     }
 }

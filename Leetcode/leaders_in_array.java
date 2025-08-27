@@ -3,7 +3,7 @@ public class leaders_in_array {
     public static void main(String[] args) {
         int[] arr={16,17,4,3,5,2};
         System.out.println("(the leaders of array are)");
-        leader(arr);
+        leaders(arr);
     }
     static void leaders(int[] arr){
         int n=arr.length;

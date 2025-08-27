@@ -1,6 +1,7 @@
 public class stock {
     public static void main(String[] args) {
         int[] prices={7,1,5,3,6,4};
+        int[] 
         System.out.println(stock(prices));
     }
     static int stock(int[] prices){
@@ -11,7 +12,7 @@ public class stock {
             if (prices[i] < buy) {
                 buy = prices[i];
             } else if (prices[i] - buy > profit) {
-                profit = prices[i] - buy;
+                profit = prices[i]-buy;
             }
         }
         return profit;

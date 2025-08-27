@@ -1,3 +1,4 @@
+//this code helps to find out max peofit on which day we should buy or sell stock;
 public class stock {
     public static void main(String[] args) {
         int[] prices={7,1,5,3,6,4};

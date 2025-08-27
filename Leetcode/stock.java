@@ -1,7 +1,7 @@
 public class stock {
     public static void main(String[] args) {
         int[] prices={7,1,5,3,6,4};
-        int[] 
+        int[] prices2={2,3,4,5,6,4}
         System.out.println(stock(prices));
     }
     static int stock(int[] prices){

@@ -1,3 +1,4 @@
+//this code finds max number of 1s occuring consecutively 
 public class max_consecutive_1s {
     public static void main (String[] args){
         int[] nums = {1, 1, 0, 1, 1,1,1, 1};

@@ -17,5 +17,6 @@ public class rotation {
     }
 
 }
+
 //if aksed to rotate by k
 //the optimal solution is to reverse 3 times first 0 to k and then k+1 to end andthen reverse the whole string;

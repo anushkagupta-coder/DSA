@@ -10,7 +10,7 @@ public class leaders_in_array {
         int maxfromright=arr[n-1];
         System.out.println(maxfromright+" ");
 
-        for(int i=n-2;i>=0;i--){
+        for(int i=n-2;i>=0;i--) {
             if(arr[i]>=maxfromright){
                 maxfromright=arr[i];
                 System.out.println(maxfromright+" ");

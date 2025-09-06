@@ -1,1 +1,1 @@
-//in this prf
+//in this program to make all elemenst 0 when o is encounterd

@@ -1,1 +1,1 @@
-//in this program to make all elemenst 0 when o is encounterd
+//in this program to make row and col element 0 when 0 is encounterd

@@ -1,9 +1,9 @@
 //this program is ti rotate the matrix by 90 degree;
 public class rotate_matrix_by_90 {
     public static void main(String[] args) {
-        matrix[3][3]={1,2,3},
+        int[][] matrix={{1,2,3},
                     {4,5,6},
-                    {7,8,9};
+                    {7,8,9}};
         System.out.println(rotate(matrix));
         
     }

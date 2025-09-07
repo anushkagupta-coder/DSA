@@ -55,5 +55,7 @@ public class matrixx_0{
     static void solution(int[][] matrix){
         int n=matrix.length;
         int m =matrix[0].length;
+
+        int col0=1;
     }
 }

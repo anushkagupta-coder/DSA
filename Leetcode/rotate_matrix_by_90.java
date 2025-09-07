@@ -4,6 +4,7 @@ public class rotate_matrix_by_90 {
         matrix[3][3]={1,2,3},
                     {4,5,6},
                     {7,8,9};
+        System.out.println(rotate(matrix));
         
     }
     static void rotate(int[][] matrix){

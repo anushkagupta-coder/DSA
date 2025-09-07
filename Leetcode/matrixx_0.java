@@ -46,3 +46,14 @@ class Solution {
         }
     }
 }
+
+//again :
+public class matrixx_0{
+    public static void main (String[] args){
+
+    }
+    static void solution(int[][] matrix){
+        int n=matrix.length;
+        int m =matrix[0].length;
+    }
+}

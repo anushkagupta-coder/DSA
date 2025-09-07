@@ -7,7 +7,7 @@ public class rotate_matrix_by_90 {
         System.out.println(rotate(matrix));
         
     }
-    static void rotate(int[][] matrix){
+    static int[][] rotate(int[][] matrix){
         int n=matrix.length;
         //transpose
         for(int i=0;i<n-2;i++){

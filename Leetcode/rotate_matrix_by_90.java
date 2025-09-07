@@ -5,8 +5,8 @@ public class rotate_matrix_by_90 {
         int[][] rotated = rotate(matrix);
 
         for(int i=0;i<rotated.length;i++){
-            for(int j=0;j<roatted.length;j++){
-
+            for(int j=0;j<rotated[i].length;j++){
+                System.out.print(rotated[i][j] + " ");
             }
         }
         

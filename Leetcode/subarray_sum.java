@@ -10,7 +10,7 @@ public class subarray_sum{
             for(int j=0;j<n;j++){
                 sum+=nums[j];
                 if(sum==target){
-                    coutn++;
+                    count++;
                 }
             }
         }

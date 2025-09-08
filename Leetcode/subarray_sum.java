@@ -2,7 +2,8 @@ public class subarray_sum{
     public static void main(String[] args) {
         int[] nums={0,2,3,4,5,2,1,4};
         int target=5;
-        subarray(nums,target);
+        int result= subarray(nums,target);
+        System.out.println(result);
     }
     static int subarray(int[] nums ,int target){
         int n=nums.length;

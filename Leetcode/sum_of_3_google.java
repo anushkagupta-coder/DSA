@@ -6,7 +6,7 @@ import java.util.List;
 
 public class sum_of_3_google {
     public static void main(String[] args) {
-        int[] nums = {}
+        int[] nums = {-1,0,1,2,-1,-4}
         System.out.println(threesum(nums));
     }
     static List<List<Integer>> threesum(int[] nums){

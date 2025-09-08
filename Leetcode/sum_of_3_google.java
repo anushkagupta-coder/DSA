@@ -1,10 +1,16 @@
 //google leetcode question ..this program will show how many 3 numbers will have addition 0;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class sum_of_3_google {
     public static void main(String[] args) {
-        int[] nums = new ArrayList<>();
+        int[] nums = {}
         System.out.println(threesum(nums));
     }
     static List<List<Integer>> threesum(int[] nums){
+        List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
 
         for(int i=0;i<nums.length-2;i++){

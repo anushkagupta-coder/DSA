@@ -1,7 +1,7 @@
 //google leetcode question ..this program will show how many 3 numbers will have addition 0;
 public class sum_of_3_google {
     public static void main(String[] args) {
-        List<Integer> nums = new ArrayList<>();
+        int[] nums = new ArrayList<>();
         System.out.println(threesum(nums));
     }
     static List<List<Integer>> threesum(int[] nums){

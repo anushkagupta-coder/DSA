@@ -9,7 +9,7 @@ public class sum_4 {
         System.out.println(fourSum(nums,target));
     }
     
-    public List<List<Integer>> fourSum(int[] nums, int target) {
+    static List<List<Integer>> fourSum(int[] nums, int target) {
         int n=nums.length;
         Arrays.sort(nums);
        List<List<Integer>> ans=new ArrayList<>();

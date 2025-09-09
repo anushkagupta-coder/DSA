@@ -5,7 +5,7 @@ import java.util.List;
 public class sum_4 {
     public static void main(String[] args) {
         int[] nums={1,2,0,2,3,4,6,8,4};
-        target=5;
+        int target=5;
         System.out.println(fourSum(nums,target));
     }
     

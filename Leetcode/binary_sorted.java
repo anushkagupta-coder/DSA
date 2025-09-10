@@ -1,12 +1,14 @@
+
 // this program uses binary search to find X from sorted ;
 
-public class binary_sorted {
+
+public class binary_sorted{
     public static void main(String[] args){
         int[] arr={1,3,4,6,32,5};
         int target=4;
         System.out.println(binary(arr,target));
     }   
-    //iterative
+    //iterative function 
     static int binary(int[] arr,int target){
         int n=arr.length;
         int low=0;

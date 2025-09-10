@@ -1,12 +1,13 @@
-package binary_search;
-//this program uses binary search to find X from sorted ;
+// this program uses binary search to find X from sorted ;
 
 public class binary_sorted {
     public static void main(String[] args){
-
+        int[] arr={1,3,4,6,32,5};
+        int target=4;
+        System.out.println(binary(arr,target));
     }   
     //iterative
-    static int binary(int[] arr,target){
+    static int binary(int[] arr,int target){
         int n=arr.length;
         int low=0;
         int high=n-1;
@@ -20,6 +21,7 @@ public class binary_sorted {
             
         }   
         else low=mid+1; 
+        return -1;
     }}
     //recursive func 
 }

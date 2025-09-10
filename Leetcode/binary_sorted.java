@@ -6,6 +6,9 @@ public class binary_sorted{
     public static void main(String[] args){
         int[] arr={1,3,4,6,32,5};
         int target=7;
+        int low;
+        int high;
+
         //System.out.println(binary(arr,target));
         System.out.println(recursive(arr,low,high,target));
     }   
@@ -33,6 +36,8 @@ public class binary_sorted{
         // First of all base condition
         if(low>high){
         return -1;}
+        int low=0;
+        int high=n-1;
         int (mid=low+high)/2;
         if(aar[mid]==target){
             return mid;

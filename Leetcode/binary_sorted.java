@@ -6,10 +6,11 @@ public class binary_sorted{
     public static void main(String[] args){
         int[] arr={1,3,4,6,32,5};
         int target=7;
-        System.out.println(binary(arr,target));
+        //System.out.println(binary(arr,target));
+        System.out.println(recursive(arr,low,high,target));
     }   
     //iterative function 
-    static int binary(int[] arr,int target){
+    /*static int binary(int[] arr,int target){
         int n=arr.length;
         int low=0;
         int high=n-1;
@@ -26,12 +27,20 @@ public class binary_sorted{
         
     }
     return -1;
-}
+}*/
     //recursive func
     static int recursive(int[] arr,int low,int high,int target) {
         // First of all base condition
         if(low>high){
         return -1;}
-        int (mid=low+high)/2
+        int (mid=low+high)/2;
+        if(aar[mid]==target){
+            return mid;
+        }
+        else if(target>arr[mid]){
+            return recursive(arr,mid+1high,target);
+
+        }
+        else return(aar,low,high-1,target);
     }
 }

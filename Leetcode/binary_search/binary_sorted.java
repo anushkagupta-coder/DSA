@@ -16,8 +16,10 @@ public class binary_sorted {
             return mid;
         }
         else if (mid>target){
-            low=;
-        }    
+            high=mid-1;
+            
+        }   
+        else low=mid+1; 
     }}
     //recursive func 
 }

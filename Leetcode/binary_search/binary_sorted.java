@@ -21,7 +21,9 @@ public class binary_sorted {
             
         }   
         else low=mid+1; 
-        return -1;
-    }}
+        
+    }
+    return -1;
+}
     //recursive func 
 }

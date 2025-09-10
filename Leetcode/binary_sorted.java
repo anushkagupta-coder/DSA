@@ -5,7 +5,7 @@
 public class binary_sorted{
     public static void main(String[] args){
         int[] arr={1,3,4,6,32,5};
-        int target=4;
+        int target=7;
         System.out.println(binary(arr,target));
     }   
     //iterative function 
@@ -27,5 +27,11 @@ public class binary_sorted{
     }
     return -1;
 }
-    //recursive func 
+    //recursive func
+    static int recursive(int[] arr,int low,int high,int target) {
+        // First of all base condition
+        if(low>high){
+        return -1;}
+        int (mid=low+high)/2
+    }
 }

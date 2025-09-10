@@ -5,7 +5,7 @@
 public class binary_sorted{
     public static void main(String[] args){
         int[] arr = {1, 3, 4, 5, 6, 32};
-        int target=7;
+        int target=6;
         int low=0;
         int n=arr.length;
         int high=n-1;
@@ -21,10 +21,10 @@ public class binary_sorted{
         int high=n-1;
         while(low<=high){
         int mid=(low+high)/2;
-        if (mid==target){
+        if (arr[mid]==target){
             return mid;
         }
-        else if (mid>target){
+        else if (arr[mid]>target){
             high=mid-1;
             
         }   

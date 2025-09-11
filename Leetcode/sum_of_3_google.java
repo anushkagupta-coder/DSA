@@ -1,5 +1,5 @@
 //google leetcode question ..this program will show how many 3 numbers will have addition 0;
-
+//askeed in google
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

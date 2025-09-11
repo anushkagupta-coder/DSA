@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-//printing the matrix 
+//printing the matrix in spital amnner
 public class spiral_matrix {
     public static void main (String[] args){
 

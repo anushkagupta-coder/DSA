@@ -13,6 +13,7 @@ public class spiral_matrix {
             return result;
         }
         
+        
         int rows = matrix.length, cols = matrix[0].length;
         int left = 0, right = cols-1, top = 0, bottom = rows-1;
         

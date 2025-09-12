@@ -39,7 +39,7 @@
         int ans=n;
         while(low<=high){
             int mid=(low+high)/2;
-            else if(arr[mid]>=target){
+            if(arr[mid]>=target){
                 mid=ans;
                 high=mid-1;
             }

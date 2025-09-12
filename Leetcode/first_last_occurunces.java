@@ -1,4 +1,4 @@
-//first and last occurunces in array;
+//first and last occurences in array;
 //this code gives us the index when element occured first time and when element occured last time iin the array;
 public class first_last_occurunces {
     public static void main(String[] args) {

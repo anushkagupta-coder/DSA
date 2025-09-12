@@ -21,6 +21,6 @@ public class lower_bound {
             else 
             low=mid+1;
         }
-        return target;
+        return low;
     }
 }

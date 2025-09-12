@@ -6,9 +6,9 @@ public class floor_ceil {
         int[] arr={23,34,39,45,56,67,70};
         int n=arr.length;
         int x=46;
-        System.out.println(floor_ceil(arr,x));
+        System.out.println(floor_ceil(arr,x,n));
     }
-    static int floor_ceil(int[] arr,int x){
+    static int floor_ceil(int[] arr,int x,n){
         int ans=-1;
         int low=0;
         int high=n-1;

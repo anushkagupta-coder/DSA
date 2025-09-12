@@ -1,3 +1,4 @@
+//this code is when we are given an element which we want to add to the aray ..it should return the index where it should be added;
 public class search_insert_position {
     public static void main(String[] args) {
         int arr[] ={1,2,3,6,15,34,39,80};

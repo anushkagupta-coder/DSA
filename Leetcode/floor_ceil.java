@@ -10,7 +10,7 @@ public class floor_ceil {
         System.out.println(ceil(arr,x,n));
 
     }
-    static int floor(int[] arr,int x,int n){
+    static int ceil(int[] arr,int x,int n){
         int ans=-1;
         int low=0;
         int high=n-1;
@@ -25,7 +25,7 @@ public class floor_ceil {
         }
         return ans;
     }
-    static int ceil(int[] arr,int x,int n){
+    static int floor(int[] arr,int x,int n){
         int ans=-1;
         int low=0;
         int high=n-1;

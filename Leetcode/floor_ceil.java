@@ -8,17 +8,19 @@ public class floor_ceil {
         int x=46;
         System.out.println(floor_ceil(arr,x,n));
     }
-    static int floor_ceil(int[] arr,int x,n){
+    static int floor_ceil(int[] arr,int x,int n){
         int ans=-1;
         int low=0;
         int high=n-1;
         while (low<=high) { 
             int mid=(low+high)/2;
             if(arr[mid]<=mid){
-                ans=ans[mid];
+                ans=arr[mid];
                 low=mid+1;
             }
-            else high-mid-1;
+            else 
+            high=mid-1;
         }
+        return low;
     }
 }

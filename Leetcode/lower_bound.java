@@ -5,7 +5,7 @@ public class lower_bound {
         int target=7;
         System.out.println(fun(arr,target,5));
     }
-    static int[] fun(int arr[],int target,int n){
+    static int fun(int arr[],int target,int n){
         int low =0;
         int high=n-1;
         int n=arr.length;

@@ -5,9 +5,10 @@ public class floor_ceil {
     public static void main(String[] args) {
         int[] arr={23,34,39,45,56,67,70};
         int n=arr.length;
-        int x=46;
+        int x=45;
         System.out.println(floor(arr,x,n));
-        System.out.println(ceil(arr,x.n));
+        System.out.println(ceil(arr,x,n));
+
     }
     static int floor(int[] arr,int x,int n){
         int ans=-1;
@@ -15,12 +16,12 @@ public class floor_ceil {
         int high=n-1;
         while (low<=high) { 
             int mid=(low+high)/2;
-            if(arr[mid]<=x){
+            if(arr[mid]>=x){
                 ans=arr[mid];
-                low=mid+1;
+                high=mid-1;
             }
             else 
-            high=mid-1;
+            low=mid+1;
         }
         return ans;
     }

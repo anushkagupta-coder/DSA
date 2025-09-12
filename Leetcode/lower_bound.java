@@ -1,7 +1,9 @@
 //program used to find lower bound (smallest index such that arr[index]>=x)
 public class lower_bound {
     public static void main(String[] args) {
-        int 
+        int arr[] ={1,2,3,6,15}
+        int target=7;
+        System.out.println(fun(arr,target,n));
     }
     static int[] fun(int arr[],int target,int n){
         int low =0;

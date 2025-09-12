@@ -1,7 +1,7 @@
 //program used to find lower bound (smallest index such that arr[index]>=x)
 public class lower_bound {
     public static void main(String[] args) {
-        
+        int 
     }
     static int[] fun(int arr[],int target,int n){
         int low =0;
@@ -9,7 +9,7 @@ public class lower_bound {
         int n;
         int ans=n;
         while(low<=high){
-            if(low>=high){
+            if(arr[mid]>=target){
                 ans=mid;
                 high=mid-1;
             }

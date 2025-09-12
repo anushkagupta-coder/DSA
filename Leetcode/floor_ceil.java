@@ -5,7 +5,7 @@ public class floor_ceil {
     public static void main(String[] args) {
         int[] arr={23,34,39,45,56,67,70};
         int n=arr.length;
-        int x=45;
+        int x=46;
         System.out.println(floor(arr,x,n));
         System.out.println(ceil(arr,x,n));
 

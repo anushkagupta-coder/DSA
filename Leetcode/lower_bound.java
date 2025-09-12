@@ -33,7 +33,7 @@
         int n=arr.length;
         System.out.println(fun(arr,target,8));
     }
-    static int fun(int arr[],int target,int n){
+    static int lower_bound(int arr[],int target,int n){
         int low =0;
         int high=n-1;
         int ans=n;

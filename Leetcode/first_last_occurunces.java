@@ -5,5 +5,7 @@ public class first_last_occurunces {
         int[] arr={};
         int n=arr.length;
     }
-    static int func(int[] arr,int n)
+    static int func(int[] arr,int n){
+        
+    }
 }

@@ -9,6 +9,16 @@ public class floor_ceil {
         System.out.println(floor_ceil(arr,x));
     }
     static int floor_ceil(int[] arr,int x){
-
+        ans=-1;
+        low=0;
+        high=n-1;
+        while (low<=high) { 
+            int mid=(low+high)/2;
+            if(arr[mid]<=mid){
+                ans=ans[mid];
+                low=mid+1;
+            }
+            else high-mid-1;
+        }
     }
 }

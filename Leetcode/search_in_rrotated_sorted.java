@@ -6,6 +6,7 @@ public class search_in_rrotated_sorted {
         int[] arr={6,7,8,1,2,3,4,5};
         int n=arr.length;
         int target=4;
+        System.out.println(binary(arr,target,n));
     }
     static int binary(int[] arr,int target,int n){
         

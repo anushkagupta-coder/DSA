@@ -1,9 +1,40 @@
 //same as to find element in sorted rotated array but here numbers will not be unique;
 public class search_unique_rotated {
     public static void main(String[] args){
-        int[] arr={};
+        int[] arr={8,9,10,1,2,3,3,3,5,6,7};
         int n=arr.length;
-        int target=
+        int target=3;
     }
-    static int binary(int[] arr,int target,int n)
+    static int binary(int[] arr,int target,int n){
+        int low=0;
+        int high=n-1;
+        while(low<=high){
+            int mid=(low+high)/2;
+            if(arr[mid]==target){
+                low++;
+                continue;
+            }
+            if(arr[mid]==high){
+                high--;
+                continue;
+            }
+            if(arr[low]<=target && target<arr[high]) {
+                if (true) {
+                    
+                }
+                else(){
+
+                }
+            }
+            else{
+                if (true) {
+                    
+                }
+                else{
+
+                }
+            }
+        }
+
+    }
 }

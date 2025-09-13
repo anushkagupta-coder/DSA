@@ -3,7 +3,7 @@ public class search_unique_rotated {
     public static void main(String[] args){
         int[] arr={8,9,10,1,2,3,3,3,5,6,7};
         int n=arr.length;
-        int target=3;
+        int target=25;
         System.out.println(binary(arr,target,n));
     }
     static boolean binary(int[] arr,int target,int n){

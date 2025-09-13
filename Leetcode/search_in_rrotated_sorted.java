@@ -11,7 +11,6 @@ public class search_in_rrotated_sorted {
     static int binary(int[] arr,int target,int n){
         
         int low=0;
-        
         int high=n-1;
         
         while(low<=high){

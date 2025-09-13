@@ -1,7 +1,8 @@
-//this code has roated arrya but in sorted manner this code will help us to find the target
+//this code has roated aaray but in sorted manner this code will help us to find the target
 public class search_in_rrotated_sorted {
     
-    public static void main (string[] args){
+
+        public static void main(String[] args){
         int[] arr={6,7,8,1,2,3,4,5};
         int n=nums.length;
         int target=4;

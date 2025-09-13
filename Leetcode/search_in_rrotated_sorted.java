@@ -4,7 +4,7 @@ public class search_in_rrotated_sorted {
 
         public static void main(String[] args){
         int[] arr={6,7,8,1,2,3,4,5};
-        int n=nums.length;
+        int n=arr.length;
         int target=4;
     }
     static int binary(int[] arr,int target,int n){

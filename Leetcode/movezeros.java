@@ -1,4 +1,4 @@
-//this program is used
+//this program is used to move zeroes
 public class movezeros {
     public static void main(String[] args) {
         int[] arr={2,3,0,6,8,0,0,1};

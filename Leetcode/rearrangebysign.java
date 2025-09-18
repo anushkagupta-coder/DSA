@@ -1,4 +1,4 @@
-//here we are rearranging the numbers in the array according to sign
+//here we are rearranging the numbers in the array according to signs given in array
 
 import java.util.*;
 public class rearrangebysign {

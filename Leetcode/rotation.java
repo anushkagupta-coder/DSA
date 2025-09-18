@@ -1,4 +1,4 @@
-//THIS PROGRAM IS TO ROTATE THE ARRAY LEFT BY 
+//THIS PROGRAM IS TO ROTATE THE ARRAY LEFT BY ONE
 public class rotation {
     public static void main(String[] args){
         int[] arr={1,2,3,4,5};

@@ -8,7 +8,7 @@ public class palindrome {
         String str1="naman";
         String str2="ANUSHKA";
         String str3="aba";
-        System.out.println(check(str,0));
+        System.out.println(check(str1,0));
         System.out.println(check(str2,0));
         System.out.println(check(str3,0));
 

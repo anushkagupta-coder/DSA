@@ -1,4 +1,4 @@
-import java.util.*; // Needed for Arrays and List classes
+import java.util.*;
 
 public class Merge_overlapping {
     public static void main(String[] args) {

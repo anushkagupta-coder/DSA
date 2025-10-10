@@ -5,7 +5,7 @@ public class Merge_overlapping {
         int[][] arr = {{1, 2}, {1, 3}, {5, 6}, {4, 7}}; 
         int n = arr.length;
 
-        int[][] merged = merge(arr, n); // Call the merge function
+        int[][] merged = merge(arr, n); 
 
         
         for (int[] interval : merged) {

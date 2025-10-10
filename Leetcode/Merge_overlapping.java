@@ -22,7 +22,7 @@ public class Merge_overlapping {
         // Loop through the rest
         for (int i = 1; i < n; i++) {
             if (arr[i][0] <= prev[1]) {
-                // Overlap → merge them
+                // Overlapping → merge them
                 prev[1] = Math.max(prev[1], arr[i][1]);
             } else {
                 // No overlap → add the previous interval

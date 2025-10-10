@@ -7,7 +7,7 @@ public class Merge_overlapping {
 
         int[][] merged = merge(arr, n); // Call the merge function
 
-        // Print merged intervals
+        
         for (int[] interval : merged) {
             System.out.println(Arrays.toString(interval));
         }

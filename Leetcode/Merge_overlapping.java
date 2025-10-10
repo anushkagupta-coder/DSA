@@ -12,7 +12,6 @@ public class Merge_overlapping {
             System.out.println(Arrays.toString(interval));
         }
     }
-
     static int[][] merge(int[][] arr, int n) {
         // ✅ Sort intervals by start time
         Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
@@ -35,7 +34,7 @@ public class Merge_overlapping {
         // Add last interval
         merged.add(prev);
 
-        // Convert list to array
+        // Converting the  list to array
         return merged.toArray(new int[merged.size()][]);
     }
 }

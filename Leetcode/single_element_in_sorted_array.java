@@ -6,6 +6,6 @@ public class single_element_in_sorted_array {
     }
 
     static void func (int[] arr, int n){
-
+        if( (mid% 2 == 0 && arr[mid]==arr[mid+1]  || (mid%2==1 && arr[mid]==arr[mid-1])  ))
     }
 }

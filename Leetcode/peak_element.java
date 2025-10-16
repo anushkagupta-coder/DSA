@@ -14,6 +14,9 @@ public class peak_element {
         int low=0;
         int high=n-1;
 
-        while
+        if(mid%2==0 && arr[mid]>arr[mid+1])[
+
+        ]
+        
     }
 }

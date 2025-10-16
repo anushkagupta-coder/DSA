@@ -3,10 +3,17 @@
 
 public class peak_element {
     public static void main(String[] args) {
-        
+        int[] arr={};
+        int n=arr.length-1;
+
+        int ans=func(arr,n);
+        System.out.println(ans);
     }
 
-    static int func({
+    static int func(INt[] srr,int n){
+        int low=0;
+        int high=n-1;
 
-    })
+        while
+    }
 }

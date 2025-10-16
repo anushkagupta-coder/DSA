@@ -10,7 +10,7 @@ public class peak_element {
         System.out.println(ans);
     }
 
-    static int func(INt[] srr,int n){
+    static int func(int[] arr,int n){
         int low=0;
         int high=n-1;
         while(low<high){

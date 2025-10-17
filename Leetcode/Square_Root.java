@@ -4,17 +4,17 @@ import java.util.Scanner;
 public class Square_Root {
     public static void main(String[] args) {
 
-        Scanner scanner= new Scanner(system.in);
+        Scanner scanner= new Scanner(System.in);
         System.out.println("Enter the Number");
         int n = scanner.nextInt();
-        int ans=func(n);
-        System.out.println("Square root of the number" + n+ "is" +ans);
+        int ans = func(n);
+        System.out.println("Square root of the number" + " "+n + " "+ "is" +" "+ans);
     }
-    static void func(int arr[] ,int n){
+    static int func(int n){
         int low=1;
         int high=n;
-        while(low < high){
-            int mid=(low+high)/2 ;
+        while(low <= high){
+            int mid = (low + high)/2 ;
             int val=mid*mid;
 
             if(val<=n){

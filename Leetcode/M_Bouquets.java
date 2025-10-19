@@ -6,7 +6,7 @@ public class M_Bouquets{
         int[] arr = {7, 7, 7, 7, 13, 11, 12, 7};
         int k = 3;
         int m = 2;
-        int ans = roseGarden(arr, k, m);
+        int ans = M_Bouquets(arr, k, m);
         if (ans == -1)
             System.out.println("We cannot make m bouquets.");
         else
@@ -34,7 +34,7 @@ public class M_Bouquets{
 
     }
 
-    static int roseGarden(int[] arr,int k,int m){
+    static int M_Bouquets(int[] arr,int k,int m){
         long val= (long)m*k;
         int n=arr.length;
 

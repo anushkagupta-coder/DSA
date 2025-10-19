@@ -28,7 +28,7 @@ public class smallest_divisor {
 
             if(sum<=threshold){
                 ans=mid;
-                high=mid+1;
+                high=mid-1;
 
             }
             else{

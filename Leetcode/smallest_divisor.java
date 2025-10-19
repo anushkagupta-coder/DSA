@@ -1,6 +1,10 @@
 public class smallest_divisor {
     public static void main(String[] args) {
-        
+        int[] arr={44,22,33,11,1};
+        int threshold=5;
+        int answer=func(arr, threshold);
+        System.out.println("the smallest divisor is");
+        System.out.println(answer);
     }
 
     static int sumbyd(int[] arr, int div){

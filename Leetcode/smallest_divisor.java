@@ -1,8 +1,10 @@
 public class smallest_divisor {
     public static void main(String[] args) {
         int[] arr={44,22,33,11,1};
+        int[] arr2={1,2,5,9};
         int threshold=5;
         int answer=func(arr, threshold);
+        int answer=func(arr2, threshold);
         System.out.println("the smallest divisor is");
         System.out.println(answer);
     }

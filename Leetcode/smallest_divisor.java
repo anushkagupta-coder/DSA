@@ -6,7 +6,9 @@ public class smallest_divisor {
         int answer=func(arr, threshold);
         int answer2=func(arr2, threshold);
         System.out.println("the smallest divisor is");
+        System.out.println("for 1st array is");
         System.out.println(answer);
+        System.out.println("for 2nd array is");
         System.out.println(answer2);
     }
 

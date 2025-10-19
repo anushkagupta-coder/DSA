@@ -15,7 +15,7 @@ public class M_Bouquets{
 
 
     }
-    static boolean possible(int[] arr,int day, int m, int k){
+    static int possible(int[] arr,int day, int m, int k){
         int n=arr.length;
         int cnt=0;
         int noofb=0;
@@ -34,7 +34,7 @@ public class M_Bouquets{
 
     }
 
-    static boolean roseGarden(int[] arr,int k,int m){
+    static int roseGarden(int[] arr,int k,int m){
         long val= (long)m*k;
         int n=arr.length;
 

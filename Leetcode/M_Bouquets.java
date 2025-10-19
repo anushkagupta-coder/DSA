@@ -30,7 +30,7 @@ public class M_Bouquets{
             }
         }
         noofb+=(cnt/k);
-        return noofb>=m;
+        return noofb;
 
     }
 

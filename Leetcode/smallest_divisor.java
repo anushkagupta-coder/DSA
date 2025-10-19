@@ -4,9 +4,10 @@ public class smallest_divisor {
         int[] arr2={1,2,5,9};
         int threshold=5;
         int answer=func(arr, threshold);
-        int answer=func(arr2, threshold);
+        int answer2=func(arr2, threshold);
         System.out.println("the smallest divisor is");
         System.out.println(answer);
+        System.out.println(answer2);
     }
 
     static int sumbyd(int[] arr, int div){

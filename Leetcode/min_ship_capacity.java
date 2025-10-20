@@ -53,8 +53,6 @@ public class min_ship_capacity {
             else{
                 low=mid+1;
             }
-        
-        
         }
         return low;
     }

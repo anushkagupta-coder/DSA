@@ -13,9 +13,6 @@ public class min_ship_capacity {
         System.out.println("the min capacity ship can load is ");
         int answer=min_capacity(weights, days);
         System.out.println(answer);
-
-
-
     }
 
     static int possible(int[] weights,int cap){

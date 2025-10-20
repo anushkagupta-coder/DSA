@@ -8,7 +8,14 @@ Return the least weight capacity of the ship that will result in all the package
 
 public class min_ship_capacity {
     public static void main(String[] args) {
-        
+        int[] weights = {1,2,3,4,5,6,7,8,9,10};
+        int days=5;
+        System.out.println("the min capacity ship can load is ");
+        int answer=min_capacity(weights, days);
+        System.out.println(answer);
+
+
+
     }
 
     static int possible(int[] weights,int cap){

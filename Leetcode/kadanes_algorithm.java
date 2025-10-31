@@ -4,25 +4,29 @@
 
 public class kadanes_algorithm {
     public static void main(String[] args) {
-        
+        int nums[]={-2,1,-3,4,-1,2,1,-5,4};
+        System.out.println("using kadanes algorithm");
+        int result=algo(nums);
+        System.out.println(result);
 
     }
 
     static int algo(int nums[]){
-        int sum=0;
-        int sumcnt=Integer.MIN_VALUE;
+        int sum=Integer.MIN_VALUE;
+        int sumcnt=0;
 
-        for(int i=0;i<nums.lengt;i++){
+        for(int i=0;i<nums.length;i++){
             sumcnt=sumcnt+nums[i];
 
-            if(sumcnt<sum){
+            if(sumcnt>sum){
                 sum=sumcnt;
 
                 if(sumcnt<0){
-                    sumcnt=0
+                    sumcnt=0;
                 }
             }
         }
+        return sum;
 
     }
 }

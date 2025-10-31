@@ -9,6 +9,20 @@ public class kadanes_algorithm {
     }
 
     static int algo(int nums[]){
-        int 
+        int sum=0;
+        int sumcnt=Integer.MIN_VALUE;
+
+        for(int i=0;i<nums.lengt;i++){
+            sumcnt=sumcnt+nums[i];
+
+            if(sumcnt<sum){
+                sum=sumcnt;
+
+                if(sumcnt<0){
+                    sumcnt=0
+                }
+            }
+        }
+
     }
 }

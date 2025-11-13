@@ -18,6 +18,23 @@ static node head = null;
         return head;
     }
 
+    static node InsertAtEnd(node head,int data){
+        node newNode = new node(data);
+        //if list is empty
+         if (head == null) {
+            head = newNode;
+            return head;
+        }
+
+        node temp = head;
+        while(temp.next!= null){
+            temp = temp.next; 
+        }
+        temp.next=newNode;
+        return head;
+        
+    }
+
     static void printLL(node head){
         node temp = head ;
         while(temp!= null){
@@ -29,8 +46,8 @@ static node head = null;
     
     public static void main(String[] args) {
         head=InsertAtStart(10);
-        
         head= InsertAtStart(20);
+        head=InsertAtEnd(head,500);
         printLL(head);
     }
 }

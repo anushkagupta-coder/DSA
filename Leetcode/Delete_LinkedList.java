@@ -1,4 +1,4 @@
-package LinkedList;
+
 class node{
     int data;
     node next;
@@ -16,13 +16,12 @@ public class Delete_LinkedList {
         if(head==null)
         return null;
 
-    }
     if(k==1){
         return head.next;
     }
 
     node curr= head;
-    for(int i =0; curr!= null ; && i<k-1; i++){
+    for(int i =0; curr!= null && i<k-1; i++){
         curr= curr.next;
     }
     if (curr == null || curr.next == null){
@@ -32,7 +31,7 @@ public class Delete_LinkedList {
     curr.next = curr.next.next;
 
     return head;
-
+    }
     static void printList(node head){
         node temp=head;
         while(temp!= null){

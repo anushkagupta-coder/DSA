@@ -35,7 +35,7 @@ public class Delete_LinkedList {
     static void printList(node head){
         node temp=head;
         while(temp!= null){
-            System.out.println(temp.data+"->");
+            System.out.print(temp.data+"->");
             temp=temp.next;
         }
         System.out.println("null");
@@ -56,7 +56,7 @@ public class Delete_LinkedList {
 
         head = delNode(head,k);
 
-        System.out.println("after del " +k + "rd node");
+        System.out.println("\nafter del " +k + "rd node");
         printList(head);
     }
 

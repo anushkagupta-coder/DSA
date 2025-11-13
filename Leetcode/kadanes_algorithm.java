@@ -20,11 +20,11 @@ public class kadanes_algorithm {
 
             if(sumcnt>sum){
                 sum=sumcnt;
-
-                if(sumcnt<0){
+            }
+            if(sumcnt<0){
                     sumcnt=0;
                 }
-            }
+            
         }
         return sum;
 

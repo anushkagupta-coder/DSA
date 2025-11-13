@@ -59,5 +59,4 @@ public class Delete_LinkedList {
         System.out.println("\nafter del " +k + "rd node");
         printList(head);
     }
-
 }

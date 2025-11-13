@@ -4,12 +4,12 @@ class node{
 
     node(int data){
         this.data=data;
-        this.next=next;
+        this.next=null;
         }
 }
 
 public class Insert_LinkedList {
-
+static node head = null; 
     static node InsertAtStart(int data){
         node newNode = new node(data);
 
@@ -20,14 +20,17 @@ public class Insert_LinkedList {
 
     static void printLL(node head){
         node temp = head ;
-        while(temp! = null){
-            System.out.println(temp.data+ "-> " );
+        while(temp!= null){
+            System.out.print(temp.data+ "-> " );
             temp = temp.next;
         }
         System.out.println("null");
     }
     
     public static void main(String[] args) {
+        head=InsertAtStart(10);
         
+        head= InsertAtStart(20);
+        printLL(head);
     }
 }

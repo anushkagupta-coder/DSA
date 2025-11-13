@@ -59,7 +59,7 @@ public class Java_collection{
         marks.put("Math", 100);
         marks.put("spos", 90);
 
-        System.out.println("maths marks"+marks.get("Math"));
+        System.out.println("maths marks "+marks.get("Math"));
 
         //loop through 
         for(String subject : marks.keySet()){

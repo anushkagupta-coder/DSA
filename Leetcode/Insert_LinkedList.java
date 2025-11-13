@@ -46,8 +46,10 @@ static node head = null;
     
     public static void main(String[] args) {
         head=InsertAtStart(10);
+       head=InsertAtEnd(head,500);
         head= InsertAtStart(20);
-        head=InsertAtEnd(head,500);
+
+        
         printLL(head);
     }
 }

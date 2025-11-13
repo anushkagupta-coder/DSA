@@ -1,3 +1,8 @@
+//Writting this code to learn how to insert the data in linked list 
+//1. insertion at starting 
+//2.insertion at end 
+//3.insertion at kth position
+
 class node{
     int data;
     node next;
@@ -35,6 +40,29 @@ static node head = null;
         
     }
 
+    static node InsertAtKth(node head,int data,int k){
+        node newNode = new node(data);
+
+        if(k==1){
+            newNode.next=head;
+            head=newNode;
+            return head;
+        }
+
+        node temp = head;
+        int cnt = 1;
+
+        // Traverse to the (k-1)th node
+        while (temp != null && cnt < k - 1) {
+            temp = temp.next;
+            cnt++;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+
+        return head;
+    }
+
     static void printLL(node head){
         node temp = head ;
         while(temp!= null){
@@ -46,9 +74,9 @@ static node head = null;
     
     public static void main(String[] args) {
         head=InsertAtStart(10);
-       head=InsertAtEnd(head,500);
+        head=InsertAtEnd(head,500);
         head= InsertAtStart(20);
-
+        head=InsertAtKth(head, 467, 2);
         
         printLL(head);
     }

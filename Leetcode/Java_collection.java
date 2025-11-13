@@ -45,6 +45,26 @@ public class Java_collection{
          System.out.println(fruits.size());
 
     }
-}
+}*/
 
+//-------------------------------------------------------------//
+//map hashmap
+
+import java.util.HashMap;
+
+public class Java_collection{
+    public static void main(String[] args) {
+        HashMap<String , Integer> marks = new HashMap<>();
+
+        marks.put("Math", 100);
+        marks.put("spos", 90);
+
+        System.out.println("maths marks"+marks.get(Math));
+
+        //loop through 
+        for(String subject : marks.heySet()){
+            System.out.println(subject + "->" + marks.get(subject));
+        }
+    }
+}
 

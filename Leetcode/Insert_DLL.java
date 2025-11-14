@@ -16,10 +16,12 @@ class node{
 }
 
 public class Insert_DLL {
+    static node head = null;
     public static void main(String[] args) {
-        static node head = null;
+        
         head = new node(10);
         head=insertNode(30);
+        printDLL(head);
 
     }
 
@@ -33,6 +35,7 @@ public class Insert_DLL {
         newNode.next = head;
         head.back=newNode;
         head=newNode;
+        return head;
     }
 
     static void printDLL(node head){

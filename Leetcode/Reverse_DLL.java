@@ -1,6 +1,7 @@
 //code to reverse doubly lined list
 //we can use stack but optimal way is to switch links
-
+//kaise kiya??---- kuch nhi bas next pointer to back kar diya aur back pointer ko next kr diya 
+//swapped the pointers onlyyyy 
 class Node{
     int data;
     Node next;
@@ -65,3 +66,6 @@ public class Reverse_DLL {
         System.out.println("null");
     }
 }
+
+
+

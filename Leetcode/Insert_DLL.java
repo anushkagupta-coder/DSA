@@ -19,8 +19,8 @@ public class Insert_DLL {
     static node head = null;
     public static void main(String[] args) {
         
-        head = new node(10);
-        head=insertNode(30);
+        node head = new node(10);
+        node head=insertNode(30);
         printDLL(head);
 
     }

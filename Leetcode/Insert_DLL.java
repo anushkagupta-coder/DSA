@@ -4,11 +4,11 @@
 //2.insertion at end 
 //3.insertion at kth position 
 
-class node{
+class Node{
     int data;
-    node next;
-    node back;
-    node(int data){
+    Node next;
+    Node back;
+    Node(int data){
         this.data=data;
         this.next=null;
         this.back=null;
@@ -16,17 +16,34 @@ class node{
 }
 
 public class Insert_DLL {
-    static node head = null;
+    static Node head = null;
     public static void main(String[] args) {
         
-        node head = new node(10);
-        node head=insertNode(30);
+        head =insertAtBegin(10);
+        head=insertAtEnd(300,head);
+        head=insertAtBegin(30);
         printDLL(head);
 
     }
 
-    static node insertNode(int data,int prev , int next){
-        node newNode = new node(data);
+    static Node insertAtEnd(int data, Node head){
+        Node newNode= new Node(data);
+        if(head == null )
+        return newNode;
+        
+        Node temp = head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next = newNode;
+    newNode.back = temp;
+
+    return head;
+
+    }
+
+    static Node insertAtBegin(int data){
+        Node newNode = new Node(data);
 
         if(head == null){
             head = newNode;
@@ -38,10 +55,10 @@ public class Insert_DLL {
         return head;
     }
 
-    static void printDLL(node head){
-        node temp=head;
+    static void printDLL(Node head){
+        Node temp=head;
         while(temp!= null){
-            System.out.println(temp.data + " <-> ");
+            System.out.print(temp.data + " <-> ");
             temp=temp.next;
         }
         System.out.println("Null");

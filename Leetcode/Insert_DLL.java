@@ -20,11 +20,14 @@ public class Insert_DLL {
     public static void main(String[] args) {
         
         head =insertAtBegin(10);
+        head =insertAtBegin(80);
         head=insertAtEnd(300,head);
+        head = insertatKth(999, head, 2);
         head=insertAtBegin(30);
         printDLL(head);
 
     }
+
 
     static Node insertAtEnd(int data, Node head){
         Node newNode= new Node(data);
@@ -41,6 +44,46 @@ public class Insert_DLL {
     return head;
 
     }
+
+    static Node insertatKth(int data, Node head , int k){
+        Node newNode= new Node(data);
+
+        if(k==1){
+            newNode.next=head;
+            if(head!=null)
+            head.back=newNode;
+            return newNode;
+
+        }
+
+         Node temp = head;
+    int count = 1;
+
+    while(temp != null && count < k-1){
+        temp = temp.next;
+        count++;
+    }
+
+    // If k is out of bounds (beyond list length)
+    if(temp == null){
+        System.out.println("Invalid position");
+        return head;
+    }
+
+    // Insert in between or at end
+    newNode.next = temp.next;
+    newNode.back = temp;
+
+    if(temp.next != null) 
+        temp.next.back = newNode;
+
+    temp.next = newNode;
+
+    return head;
+}
+
+
+
 
     static Node insertAtBegin(int data){
         Node newNode = new Node(data);

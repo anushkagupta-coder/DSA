@@ -3,7 +3,7 @@
 
 class Node{
     int data;
-    int next;
+    Node next;
     Node(int data){
         this.data=data;
         this.next=null;
@@ -11,9 +11,20 @@ class Node{
 }
 public class Add2LL {
     public static void main(String[] args) {
-        
+        Node L1=new Node(2);
+        L1.next = new Node(4);
+        L1.next.next=new Node(3);
+
+        Node L2=new Node(5);
+        L2.next=new Node(6);
+        L2.next.next=new Node(4);
+
+        Node result=Add(L1,L2);
+
+        System.out.println("Result is");
+        printLL(result);
     }
-    static Node Add(Node L1, Node l2){
+    static Node Add(Node L1, Node L2){
 
         Node dummy= new Node(0);
         Node curr=dummy;
@@ -21,8 +32,8 @@ public class Add2LL {
         int carry=0;
 
         while( L1!= null|| L2!= null || carry!=0){
-            int x=(L1!=null) ? L1.val:0;
-            int y =(L2!= null )? L2.value:0;
+            int x=(L1!=null) ? L1.data:0;
+            int y =(L2!= null )? L2.data:0;
 
             int sum=x+y+carry;
             carry=sum/10;
@@ -39,10 +50,11 @@ public class Add2LL {
     }
 
 
-    static vois printLL(Node head){
+    static void printLL(Node head){
         Node temp=head;
         while(temp!=null){
             System.out.print(temp.data+"->");
+            temp=temp.next;
         }
         System.out.println("null");
     }

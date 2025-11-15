@@ -53,8 +53,9 @@ public class Add2LL {
     static void printLL(Node head){
         Node temp=head;
         while(temp!=null){
-            System.out.print(temp.data+"->");
             temp=temp.next;
+            System.out.print(temp.data+"->");
+            
         }
         System.out.println("null");
     }

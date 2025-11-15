@@ -11,11 +11,16 @@ class Node{
 }
 public class Detect_Loop_LL {
     public static  void main(String[] args){
-        Node head= new Node(10);
+        Node head = new Node(10);
+        head.next = new Node(20);
+        head.next.next = new Node(30);
 
+        // create a loop manually for testing
+        head.next.next.next = head.next;
+        System.out.println(DetectLoop(head));
     }
 
-    static Node DetectLoop(Node head){
+    static boolean DetectLoop(Node head){
         Node slow=head;
         Node fast=head;
 

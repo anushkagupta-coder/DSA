@@ -47,6 +47,7 @@ public class Odd_Even_LL {
             System.out.print(temp.data+"->");
             temp=temp.next;
         }
+        System.out.println("null");
 
     }
 }

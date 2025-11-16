@@ -16,7 +16,16 @@ class Node{
 }
 public class Sort_LL {
     public static void main(String[] args) {
+        Node head=new Node(10);
+        head.next=new Node(80);
+        head.next.next=new Node(30);
+        head.next.next.next=new Node(23);
+        head.next.next.next.next=new Node(47);
+        head.next.next.next.next.next=new Node(27);
+        Node result=sort(head);
+        printList(result);
         
+
     }
 //1.find of LL (hare and tortoise)
 //2.sort
@@ -24,13 +33,14 @@ public class Sort_LL {
 
     
 
-    static Node sort(node head){
+    static Node sort(Node head){
         if(head==null || head.next==null){
             return head;
         }
-        Node mid = mid(head);
+        Node mid = getmid(head);
         Node lefthead=head;
         Node righthead=mid.next;
+        mid.next=null;
 
         Node left = sort(lefthead);
         Node right = sort (righthead);
@@ -40,10 +50,10 @@ public class Sort_LL {
     }
 
 
-    static Node mid(Node head){
+    static Node getmid(Node head){
 
         Node slow=head;
-        Node fast=head;
+        Node fast=head.next;
         while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
@@ -66,14 +76,21 @@ public class Sort_LL {
                 b=b.next;
             }
             temp=temp.next;
-
+        }
              if(a != null) temp.next = a;
         if(b != null) temp.next = b;
 
-        }
+        
         return dummy.next;
         
         
 
+    }
+
+    static void printList(Node head){
+        while(head != null){
+            System.out.print(head.data + " ");
+            head = head.next;
+        }
     }
 }

@@ -22,7 +22,7 @@ public class Palindrome_LL {
         Node head= new Node(10);
         head.next=new Node(20);
         head.next.next= new Node(30);
-        head.next.next.next= new Node(50);
+        head.next.next.next= new Node(20);
         head.next.next.next.next=new Node(10);
         System.out.println("Given LL is");
         PrintLL(head);

@@ -9,7 +9,7 @@
 class Node{
     int data;
     Node next;
-    Node(Node head){
+    Node(int data){
         this.data=data;
         this.next=null;
     }
@@ -18,8 +18,30 @@ public class Sort_LL {
     public static void main(String[] args) {
         
     }
-    static Node Merge_Sort(Node head){
-        //1.find of LL (hare and tortoise)
+//1.find of LL (hare and tortoise)
+//2.sort
+//3.merge them 
+
+    
+
+    static Node sort(node head){
+        if(head==null || head.next==null){
+            return head;
+        }
+        Node mid = mid(head);
+        Node lefthead=head;
+        Node righthead=mid.next;
+
+        Node left = sort(lefthead);
+        Node right = sort (righthead);
+
+        return Merge(left,right);
+
+    }
+
+
+    static Node mid(Node head){
+
         Node slow=head;
         Node fast=head;
         while(fast!=null && fast.next!=null){
@@ -27,5 +49,31 @@ public class Sort_LL {
             fast=fast.next.next;
         }
         return slow;
+    }
+
+
+    static Node Merge(Node a,Node b){
+        Node dummy = new Node(-1);
+        Node temp=dummy;
+
+        while(a!=null && b!=null){
+            if(a.data<b.data){
+                temp.next=a;
+                a=a.next;
+            }
+            else{
+                temp.next=b;
+                b=b.next;
+            }
+            temp=temp.next;
+
+             if(a != null) temp.next = a;
+        if(b != null) temp.next = b;
+
+        }
+        return dummy.next;
+        
+        
+
     }
 }

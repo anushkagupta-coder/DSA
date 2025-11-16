@@ -20,6 +20,15 @@ public class Starting_LL_of_loop {
         head.next=new Node(20);
         head.next.next = new Node(30);
         head.next.next.next = head.next;
+
+        Node start=Starting(head);
+
+        if(start!=null ){
+            System.out.println(start.data);
+        }
+        else{
+            System.out.println("no loop");
+        }
     }
     static Node Starting(Node head){
         //1.find if loop exist;

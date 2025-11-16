@@ -21,26 +21,29 @@ public class del_mid_LL {
         head.next = new Node(20);
         head.next.next = new Node(30);
         System.out.println("list");
-        System.out.println(PrintNode(head));
+        PrintNode(head);
         System.out.println("after deletion");
-        Node head=del(head);
-        System.out.println(PrintNode(head));
+        head=del(head);
+        PrintNode(head);
     }
     static Node del(Node head){
+        if(head == null || head.next == null) return null;
+        Node prev=null;
         Node slow=head;
         Node fast=head;
 
         while(fast!=null && fast.next!=null){
+            prev=slow;
             slow=slow.next;
             fast=fast.next.next;
         }
-        Node prev;
         prev.next=slow.next;
+        return head;
 
     }
-    static Node PrintNode(node head){
+    static void PrintNode(Node head){
                 Node temp = head;
-        while(temp != null) {
+            while(temp != null) {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }

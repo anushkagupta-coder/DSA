@@ -14,7 +14,13 @@ public class Reverse_Number {
     static void fun(int n){
         //n=n%10;
         //n=n/10;
+        while (n>0) {
+            n=n%10;
+            n=n/10;
+            n=n*10+n;
+            //reversed = reversed *10 +last digit;
+        }
         
-        //reversed = reversed *10 +last digit;
+       
     }
 }

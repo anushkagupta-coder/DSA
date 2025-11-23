@@ -3,8 +3,9 @@
 public class Palindrome_Num {
     public static void main(String[] args) {
         int n= 1234321;
+
         System.out.println("checking palindrome");
-        if(n=fun(n)){
+        if(n==fun(n)){
             System.out.println("palindrome");
 
         }
@@ -15,10 +16,10 @@ public class Palindrome_Num {
     }
     static int fun(int n){
         int lastdigit;
-        int reverse;
+        int reverse = 0;
         while(n!=0){
         lastdigit = n %10;
-        reverse = reverse*10+n;
+        reverse = reverse*10+lastdigit;
         n=n/10;
     }
     return reverse;

@@ -16,11 +16,11 @@ public class Reverse_Number {
         //n=n/10;
         while (n>0) {
             n=n%10;
-            n=n/10;
-            n=n*10+n;
+            lastdigit=n/10;
+            rev=rev*10+lastdigit;
             //reversed = reversed *10 +last digit;
         }
-        
+
        
     }
 }

@@ -17,7 +17,7 @@ public class Reverse_Number {
         int lastdigit;
         int rev=0;
 
-        while (n>0) {
+        while (n!=0) {
             lastdigit = n % 10;
 
             rev=rev*10+lastdigit;

@@ -7,12 +7,10 @@ public class Palindrome_Num {
         System.out.println("checking palindrome");
         if(n==fun(n)){
             System.out.println("palindrome");
-
         }
         else {
             System.out.println("Not palindrome");
         }
-
     }
     static int fun(int n){
         int lastdigit;

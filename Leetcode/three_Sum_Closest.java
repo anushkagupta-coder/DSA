@@ -11,16 +11,16 @@ public class three_Sum_Closest {
         fun(arr,n,target);
     }
 
-    static void fun(int[] arr, int n , int target){
+    static int fun(int[] arr, int n , int target){
         //1.sort
         //2.two pointer
         //3.keep updating closest sum
         int left,right;
-        arr.sort()
+        Arrays.sort(arr);
         int closest_sum= arr[0]+arr[1]+arr[2];
-        for(i=0;i<n;i++){
+        for(int i=0;i<n;i++){
             left=i+1;
-            right=n-1
+            right=n-1;
         }
         while(left < right){
             current_sum = arr[i]+arr[left]+arr[right];
@@ -36,4 +36,6 @@ public class three_Sum_Closest {
             }
             
     }
+    return closest_sum;
+}
 }

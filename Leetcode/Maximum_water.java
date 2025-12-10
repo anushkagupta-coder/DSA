@@ -19,8 +19,18 @@ public class Maximum_water {
      
         while(left<right){
             int water=width*height;
-        }
+            if(water>max_water){
+                max_water=water;
+            }
 
+            if(arr[left]<arr[right]){
+                left++;
+            }
+            else{
+                right++;
+            }
+        }
+return max_water;
 
     }
 }

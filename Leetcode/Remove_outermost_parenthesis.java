@@ -1,8 +1,7 @@
+//plz recheck it 
+//(()())(()) -->> ()()()
 public class Remove_outermost_parenthesis {
     public static void main(String[] args){
-
-
-
     static int fun(){
     StringBuilder result = new StringBuilder();
         int depth = 0;

@@ -27,14 +27,14 @@ public class three_Sum_Closest {
         
         while(left < right){
             int current_sum = arr[i]+arr[left]+arr[right];
-            if((current_sum-target)==closest_sum-target){
+            if(Math.abs(current_sum-target)==Math.abs(closest_sum-target)){
                 closest_sum=current_sum;
             }
             if(current_sum<target){
-                left-=1;
+                left++;
             }
             else if(current_sum>target){
-                right+=1;
+                right--;
             }
             else {
                 return target;

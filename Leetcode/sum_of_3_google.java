@@ -26,7 +26,7 @@ public class sum_of_3_google {
                     ans.add(Arrays.asList(nums[i],nums[j],nums[k]));
 
                     while(j<k && nums[k]==nums[k-1]){
-                        k--;
+                        k-- ;
                     }
                     j++;
                     k--;

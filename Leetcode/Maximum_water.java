@@ -1,3 +1,4 @@
+import java.util.*;
 //this program is to find the maximum water cna be hold or the area kind of 
 //here the trick is that the minimu heigth will decide this 
 public class Maximum_water {
@@ -10,9 +11,10 @@ public class Maximum_water {
     static int func(int[] arr,int n ){
         int height ;
         int left,right ;
-           left=0;
+        left=0;
         right=n-1;
-        int height=min(arr(left),arr(right));
+        int max_water=0;
+        int height=Math.min(arr[left],arr[right]);
         int width=(right-left);
      
         while(left<right){

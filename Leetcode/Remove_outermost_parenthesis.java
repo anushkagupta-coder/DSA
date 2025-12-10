@@ -13,6 +13,8 @@ public class Remove_outermost_parenthesis {
                 }
                 depth++;
             } else { // c == ')'
+
+            
                 depth--;
                 if (depth > 0) {
                     result.append(c);

@@ -1,4 +1,7 @@
 
+import java.security.cert.CRLReason;
+
+
 
 
 //this code is to find the number which is closest to the target sum
@@ -18,24 +21,27 @@ public class three_Sum_Closest {
         int left,right;
         Arrays.sort(arr);
         int closest_sum= arr[0]+arr[1]+arr[2];
-        for(int i=0;i<n;i++){
+        for(int i=0; i < n-2 ; i++){
             left=i+1;
             right=n-1;
-        }
+        
         while(left < right){
-            current_sum = arr[i]+arr[left]+arr[right];
-
-            if(current_sum<target){
-                right-=1;
+            int current_sum = arr[i]+arr[left]+arr[right];
+            if((current_sum-target)==closest_sum-target){
+                closest_sum=current_sum;
             }
-            if(current_sum>target){
-                left+=1;
+            if(current_sum<target){
+                left-=1;
+            }
+            else if(current_sum>target){
+                right+=1;
             }
             else {
                 return target;
             }
             
     }
+}
     return closest_sum;
 }
 }

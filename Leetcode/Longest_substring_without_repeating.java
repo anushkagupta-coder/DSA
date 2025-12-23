@@ -3,7 +3,7 @@
 import java.util.Set;
 public class Longest_substring_without_repeating {
     public static void main(String[] args){
-        string s="abcabad";
+        String s="abcabad";
         System.out.println(fun(s));
     }
     static int fun(String s){

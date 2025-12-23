@@ -12,7 +12,7 @@ public class Longest_Repeating_char {
         int maxfreq=0;
         int[] count = new int[26];
 
-         for(int right=0; right<str.length(); right++){
+         for(right=0; right<str.length(); right++){
             int index = str.charAt(right)-'A';
             count[index]++;
 

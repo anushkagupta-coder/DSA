@@ -1,5 +1,6 @@
 //this is a sliding window probem here we will be using teo pointers right and left 
 //add into set or hashmap if not presnt if duplicate remove and move right count the total length;
+import java.util.HashSet;
 import java.util.Set;
 public class Longest_substring_without_repeating {
     public static void main(String[] args){

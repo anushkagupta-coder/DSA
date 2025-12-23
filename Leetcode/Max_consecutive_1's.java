@@ -11,5 +11,22 @@ public class Max_consecutive_1's {
         int right=0;
         int left=0;
         int zerocount=0;
+        int maxLength=0;
+
+        for(right=0; ; right<nums.length; right++){
+            if(nums[right]==0){
+                zerocount++;
+            }
+            while(zerocount>k){
+                if(nums[left] == 0 ){
+                    zerocount--;
+                }
+
+                left++
+            }
+        }
+        maxLength = Math.max(maxLength, right - left + 1);
+
     }
+    return maxLength;
 }

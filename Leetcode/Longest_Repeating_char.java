@@ -1,16 +1,18 @@
 public class Longest_Repeating_char {
     public static void main(String[] args) {
-        int{} str = "AAABB";
+        String str = "AAABB";
         int k =2; 
-        System.out.println(fun(arr,n));
+        System.out.println(fun(str,k));
     }
 
-    static fun(int[] arr, int n){
+    static int fun(String str, int n){
         int right=0;
         int left=0;
-        int maxlenght=0;
+        int maxlength=0;
         int maxfreq=0;
-         for(int right=0; right<s.length() ; right++){
+        int[] count = new int[26];
+
+         for(int right=0; right<s.length(); right++){
             int index = s.charAt(right)-'A';
             count[index]++;
 
@@ -23,10 +25,10 @@ public class Longest_Repeating_char {
                 
             }
 
-            maxlenght=Math.max(maxlenght , right-left+1);
+            maxlength=Math.max(maxlength , right-left+1);
 
          }
 
-         return maxLenght;
+         return maxlength;
     }
 }

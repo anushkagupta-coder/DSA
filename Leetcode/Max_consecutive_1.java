@@ -1,4 +1,4 @@
-public class Max_consecutive_1's {
+public class Max_consecutive_1 {
     public static void main(String[] args){
         int[] nums= {1,1,1,0,0,0,1,1,1,1,0};
         int k=2;
@@ -24,8 +24,9 @@ public class Max_consecutive_1's {
 
                 left++;
             }
+            maxLength = Math.max(maxLength, right - left + 1);
         }
-        maxLength = Math.max(maxLength, right - left + 1);
+        
         return maxLength;
     }
     

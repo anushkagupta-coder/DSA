@@ -14,7 +14,6 @@ public class Longest_substring_without_repeating {
 
         while(right < s.length()){
            char currentchar = s.charAt(right);
-
            if(!set.contains(currentchar)){
             set.add(currentchar);
             maxlength=Math.max(maxlength , right-left+1);

@@ -22,15 +22,15 @@ public class TrieTree {
 
         Trie.insert("apple");
 
-        System.out.println(Trie.search("apple"));
-        System.out.println(Trie.search("app"));
-        System.out.println(Trie.startwith("app"));
+        System.out.println(trie.search("apple"));
+        System.out.println(trie.search("app"));
+        System.out.println(trie.startwith("app"));
 
-        Trie.insert("app");
+        trie.insert("app");
         System.out.println(trie.search("app"));
     }
 
-    static void insert(String word){
+    public void insert(String word){
         TrieNode curr=root;
         for(char ch:word.toCharArray()){
             int index = ch-'a';
@@ -46,7 +46,7 @@ public class TrieTree {
     }
 
 
-    static boolean search(String word){
+    public boolean search(String word){
         TrieNode curr = root;
 
         for(char ch: word.toCharArray()){
@@ -62,7 +62,7 @@ public class TrieTree {
         return curr.isEndOfWord;
     }
 
-    static boolean startwith(String prefix){
+    public boolean startwith(String prefix){
         TrieNode curr=root;
         for(char ch: prefix.toCharArray()){
             int index=ch-'a';

@@ -31,11 +31,11 @@ public class Jump_Game_greedy {
         int jumps = 0;
 
         for(int i=0; i< nums.length-1 ;i++){
-             farthest = Math.max(farthest, i + nums[i]);
+             maxreach = Math.max(maxreach, i + nums[i]);
 
              if(i==currentend){
                 jumps++;
-                currentend=farthest;
+                currentend=maxreach;
 
              }
         }

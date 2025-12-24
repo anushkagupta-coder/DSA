@@ -18,9 +18,63 @@ class Trie{
 
 public class TrieTree {
     public static void main(String[] args) {
-        
+        Trie trie = new trie();
+
+        trie.insert("apple");
+
+        System.out.println(trie.search("apple"));
+        System.out.println(trie.search("app"));
+        System.out.println(trie.startwith("app"));
+
+        trie.insert("app");
+        System.out.println(trie.search("app"));
     }
 
-    static void insert(String word)
+    static void insert(String word){
+        TrieNode curr=root;
+        for(char ch:word.toCharArray()){
+            int index = ch-'a';
+
+            if(curr.children[index] == null){
+                curr.children[index] =new TrieNode();
+            }
+
+            curr=curr.children[index];
+
+        }
+        curr.isEndOfWord = true;
+    }
+
+
+    static boolean serach(String word){
+        TrieNode curr = root;
+
+        for(char ch: word.toCharArray()){
+            int index = ch-'a';
+
+            if(curr.children[index] == null){
+                return false;
+            }
+
+            curr=curr.children[index];
+        }
+
+        return curr.isEndOfWord;
+    }
+
+    static boolean startwith(String prefix){
+        TrieNode curr=root;
+        for(char ch: prefix.toCharArray()){
+            int index=ch-'a';
+
+            if(curr.children[index] == null){
+                return false;
+            }
+
+            curr = curr.children[index];
+        }
+
+        return true;
+    }
 }
 

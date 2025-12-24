@@ -67,7 +67,7 @@ public class TrieTree {
     public static void main(String[] args) {
         Trie trie = new Trie();
 
-        Trie.insert("apple");
+        trie.insert("apple");
 
         System.out.println(trie.search("apple"));
         System.out.println(trie.search("app"));

@@ -5,7 +5,7 @@ public class Jump_Game_greedy {
         System.out.println(canJump(nums));
     }
 
-    static void canJump(int[] nums){
+    static boolean canJump(int[] nums){
         int maxReach = 0;
 
         for (int i = 0; i < nums.length; i++) {

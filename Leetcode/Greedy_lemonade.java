@@ -1,6 +1,6 @@
 public class Greedy_lemonade {
     public static void main(String[] args) {
-        int[] bills = {5,5,10,15};
+        int[] bills = {5,5,10,20};
         System.out.println(lemonadeChange(bills));
 
     }

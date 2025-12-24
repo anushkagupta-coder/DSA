@@ -14,21 +14,6 @@ class Trie{
     Trie(){
         root = new TrieNode();
     }
-}
-
-public class TrieTree {
-    public static void main(String[] args) {
-        Trie trie = new Trie();
-
-        Trie.insert("apple");
-
-        System.out.println(trie.search("apple"));
-        System.out.println(trie.search("app"));
-        System.out.println(trie.startwith("app"));
-
-        trie.insert("app");
-        System.out.println(trie.search("app"));
-    }
 
     public void insert(String word){
         TrieNode curr=root;
@@ -76,5 +61,22 @@ public class TrieTree {
 
         return true;
     }
+}
+
+public class TrieTree {
+    public static void main(String[] args) {
+        Trie trie = new Trie();
+
+        Trie.insert("apple");
+
+        System.out.println(trie.search("apple"));
+        System.out.println(trie.search("app"));
+        System.out.println(trie.startwith("app"));
+
+        trie.insert("app");
+        System.out.println(trie.search("app"));
+    }
+
+    
 }
 

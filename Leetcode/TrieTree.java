@@ -18,15 +18,15 @@ class Trie{
 
 public class TrieTree {
     public static void main(String[] args) {
-        Trie trie = new trie();
+        Trie trie = new Trie();
 
-        trie.insert("apple");
+        Trie.insert("apple");
 
-        System.out.println(trie.search("apple"));
-        System.out.println(trie.search("app"));
-        System.out.println(trie.startwith("app"));
+        System.out.println(Trie.search("apple"));
+        System.out.println(Trie.search("app"));
+        System.out.println(Trie.startwith("app"));
 
-        trie.insert("app");
+        Trie.insert("app");
         System.out.println(trie.search("app"));
     }
 
@@ -46,7 +46,7 @@ public class TrieTree {
     }
 
 
-    static boolean serach(String word){
+    static boolean search(String word){
         TrieNode curr = root;
 
         for(char ch: word.toCharArray()){

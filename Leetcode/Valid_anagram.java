@@ -1,4 +1,5 @@
 //Anagram if numebr of letter means length is same and ordeer doesnt matter also frequency of letters is same
+import java.util.Arrays;
 public class Valid_anagram {
     public static void main(String[] args) {
         String s="anushka";
@@ -16,8 +17,8 @@ public class Valid_anagram {
         char[] a=s.toCharArray();
         char[] b= t.toCharArray();
         Arrays.sort(a);
-        Array.sort(b);
+        Arrays.sort(b);
 
-        return Arrays.equals(a,b)
+        return Arrays.equals(a,b);
     }
 }

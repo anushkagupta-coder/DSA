@@ -4,7 +4,7 @@ public class Valid_anagram {
         String s="anushka";
         String t="ushkaan";
         System.out.println("are they anagram");
-        System.out.println();
+        System.out.println(fun(s, t));
 
     }
     static boolean fun(String s,String t){

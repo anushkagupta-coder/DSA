@@ -6,7 +6,7 @@ public class Longest_common_prefix {
         System.out.println(fun(strs));
     }   
     
-    static void fun(String[] strs){
+    static String fun(String[] strs){
         if (strs.length == 0) 
             return " ";
         String prefix=strs[0];

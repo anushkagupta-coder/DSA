@@ -2,11 +2,11 @@
 //ek baar ek mili toh use right ke sab parts bhihonge hi substring having all 3 charecters
 public class Substring_All_three_chare {
     public static void main(String[] args) {
-        String="aabcacb";
+        String s="abcabc";
         System.out.println(fun(s));
     }
 
-    static void fun(String s){
+    static int fun(String s){
         int[] count = new int[3]; // count[0]=a, count[1]=b, count[2]=c
         int left = 0;
         int ans = 0;

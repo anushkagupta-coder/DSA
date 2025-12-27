@@ -3,7 +3,7 @@ public class Longest_common_prefix {
     public static void main(String[] args) {
         String[] strs = {"Flower" , "Flow" , "Flight"};
         System.out.println("prfix ");
-        System.out.println(fun);
+        System.out.println(fun(strs));
     }   
     
     static void fun(String[] strs){
@@ -12,7 +12,7 @@ public class Longest_common_prefix {
         String prefix=strs[0];
     if(int i=1;i<strs.length;i++){
         while(!strs[i].startsWith(prefix)){
-            prefix=prefix.sunstring(0,prefix.length()-1);
+            prefix=prefix.substring(0,prefix.length()-1);
 
             if(prefix.isEmpty())
                 return "";

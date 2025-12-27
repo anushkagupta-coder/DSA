@@ -10,7 +10,7 @@ public class Longest_common_prefix {
         if (strs.length == 0) 
             return " ";
         String prefix=strs[0];
-    if(int i=1;i<strs.length;i++){
+    for(int i=1;i<strs.length;i++){
         while(!strs[i].startsWith(prefix)){
             prefix=prefix.substring(0,prefix.length()-1);
 
@@ -18,5 +18,6 @@ public class Longest_common_prefix {
                 return "";
         }
     }
+    return prefix;
     }
 }

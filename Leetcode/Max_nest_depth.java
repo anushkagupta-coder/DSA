@@ -15,7 +15,7 @@ public class Max_nest_depth {
             char ch = s.charAt(i);
 
             if(char=='('){
-                currentdepth=++;
+                currentdepth++;
                 maxdepth = math.max(maxdepth,currentdepth)
             }
             else if(char =' )'){

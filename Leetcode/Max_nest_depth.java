@@ -14,11 +14,11 @@ public class Max_nest_depth {
         for(int i=0;i<s.length() ;i++){
             char ch = s.charAt(i);
 
-            if(char=='('){
+            if(ch=='('){
                 currentdepth++;
                 maxdepth = Math.max(maxdepth,currentdepth);
             }
-            else if(char =' )'){
+            else if(ch==')'){
                 currentdepth--;
             }
         }

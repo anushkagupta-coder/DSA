@@ -16,13 +16,13 @@ public class Max_nest_depth {
 
             if(char=='('){
                 currentdepth++;
-                maxdepth = math.max(maxdepth,currentdepth)
+                maxdepth = Math.max(maxdepth,currentdepth);
             }
             else if(char =' )'){
                 currentdepth--;
             }
         }
 
-        retrin maxdepth;
+        return maxdepth;
     }
 }

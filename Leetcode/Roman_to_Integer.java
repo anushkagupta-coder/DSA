@@ -10,10 +10,11 @@ public class Roman_to_Integer {
         System.out.println("Enter the roman number");
         String s=scanner.nextLine();
         System.out.println("Integer value =" + fun(s));
+        scanner.close();
     }
 
-    static String fun(String s){
-        Map<Character , Integer> map = new HashMap<>;
+    static int fun(String s){
+        Map<Character , Integer> map = new HashMap<>();
         map.put('I',1);
         map.put('V',5);
         map.put('X',10);

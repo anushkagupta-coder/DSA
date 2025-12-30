@@ -3,7 +3,7 @@
 //time complexity will be O(n)
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner.util; 
+import java.util.Scanner; 
 public class Roman_to_Integer {
     public static void main(String[] args){
         Scanner scanner= new Scanner(System.in);

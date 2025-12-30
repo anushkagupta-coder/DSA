@@ -3,9 +3,11 @@
 
 public class Max_nest_depth {
     public static void main(String[] args) {
-        
+        String s= "()(())((()()))";
+        System.out.println("max nesting depth is");
+        System.out.println(fun(s));
     }
-    static void fun(){
+    static int fun(String s){
         int currentdepth =0;
         int maxdepth=0;
 

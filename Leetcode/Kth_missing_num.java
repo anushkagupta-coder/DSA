@@ -22,7 +22,7 @@ public class Kth_missing_num {
     }
 
     static int fun(int[] arr,int k){
-        int n=arr.length;
+        int n=arr.length;   
         for(int i=0 ; i<n ;i++){
             int missingcount=arr[i]-(i+1);
             if (missingcount>=k){

@@ -56,6 +56,7 @@ import java.util.List;
 
 public class N_Queen_Problem {
     public static void main(String[] args) {
+        int n= 4;
         List<List<String>> result= new ArrayList<>();;
         char[][] board = new char[n][n];
         for(int i=0;i<n;i++){

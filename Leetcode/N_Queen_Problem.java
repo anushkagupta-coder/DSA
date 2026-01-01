@@ -63,7 +63,7 @@ public class N_Queen_Problem {
             Arrays.fill(board[i],'.');
         }
         queen(0,board,result,n);    
-        return result;
+         System.out.println(result);
     }
 
     static void queen(int row, char[][] board, List<List<String>> result, int n){
@@ -78,15 +78,16 @@ public class N_Queen_Problem {
                 //choose
                 board[row][col]='Q';
                 //recurse 
-                solve(row+1, board,result,n);
+                queen(row+1, board,result,n);
                 //unchoose
-                board[roe][col]='.';
+                board[row][col]='.';
             }
         }
+    }
 static boolean isSafe(char[][] board, int row, int col, int n){
         //safety check
         //same col
-        for(int =0 ; i<row ;i++){
+        for(int i=0 ; i<row ;i++){
             if(board[i][col] =='Q');
             return false;
         }
@@ -113,6 +114,7 @@ static boolean isSafe(char[][] board, int row, int col, int n){
             
         }
     }
+    
         static List<String> construct(char[][] board) {
         List<String> temp = new ArrayList<>();
         for (char[] row : board) {
@@ -120,5 +122,5 @@ static boolean isSafe(char[][] board, int row, int col, int n){
         }
         return temp;
     }
-    }
 }
+

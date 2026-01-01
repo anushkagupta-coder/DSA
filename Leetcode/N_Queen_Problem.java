@@ -82,7 +82,7 @@ public class N_Queen_Problem {
                 board[roe][col]='.';
             }
         }
-
+static boolean isSafe(char[][] board, int row, int col, int n){
         //safety check
         //same col
         for(int =0 ; i<row ;i++){
@@ -111,8 +111,8 @@ public class N_Queen_Problem {
             j++;    
             
         }
-
-        List<String> construct(char[][] board) {
+    }
+        static List<String> construct(char[][] board) {
         List<String> temp = new ArrayList<>();
         for (char[] row : board) {
             temp.add(new String(row));

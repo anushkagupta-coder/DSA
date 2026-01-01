@@ -11,7 +11,7 @@ public class Combination_sum {
         int target=7;
         List<List<Integer>> result= new ArrayList<>();
         backtrack(candidates, target, 0, new ArrayList<>(), result);
-        System.out.println(backtrack(candidates, target, index, current, result));
+        System.out.println(backtrack(candidates, target, 0, new ArrayList<>(), result));
     }
 
     static void backtrack(int[] candidates, int target, int index,List<Integer> current, List<List<Integer>> result){

@@ -88,7 +88,7 @@ static boolean isSafe(char[][] board, int row, int col, int n){
         //safety check
         //same col
         for(int i=0 ; i<row ;i++){
-            if(board[i][col] =='Q');
+            if(board[i][col] =='Q')
             return false;
         }
 
@@ -104,8 +104,8 @@ static boolean isSafe(char[][] board, int row, int col, int n){
         }
 
         //upper right diagonal
-        int i=row-1;
-        int j=col+1;
+        i=row-1;
+        j=col+1;
         while(i>=0 && j< n){
             if(board[i][j] =='Q')
                 return false;
@@ -113,6 +113,7 @@ static boolean isSafe(char[][] board, int row, int col, int n){
             j++;    
             
         }
+        return true ;
     }
     
         static List<String> construct(char[][] board) {

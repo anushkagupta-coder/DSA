@@ -1,6 +1,6 @@
 public class Sudoku_solver {
     public static void main(String[] args) {
-        solve(board);
+        char[][] board = new char[][];
         System.out.println(solve(board));
     }
 

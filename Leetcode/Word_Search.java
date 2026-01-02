@@ -8,7 +8,7 @@ public class Word_Search {
 
         String word = "ABCCED";
         System.out.println(exist(board, word));
-
+    }
         static boolean exist(char[][] board, String word){
         int rows = board.length ;
         int col= board[0].length;

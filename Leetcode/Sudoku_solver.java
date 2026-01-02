@@ -64,7 +64,7 @@ public class Sudoku_solver {
         //no same num in 3*3 grid
         int boxRowStart = (row / 3) * 3;
         int boxColStart = (col / 3) * 3;
-
+                
         for (int i = boxRowStart; i < boxRowStart + 3; i++) {
             for (int j = boxColStart; j < boxColStart + 3; j++) {
                 if (board[i][j] == num)

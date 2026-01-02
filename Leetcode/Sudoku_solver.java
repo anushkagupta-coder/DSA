@@ -12,6 +12,14 @@ public class Sudoku_solver {
     {'.','.','.','.','8','.','.','7','9'}
 };
         System.out.println(solve(board));
+
+        //print the board
+        for(int i=0;i<9 ;i++){
+            for(int j=0 ; j<9;j++){
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     static boolean solve(char[][] board){

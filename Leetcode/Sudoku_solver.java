@@ -1,6 +1,16 @@
 public class Sudoku_solver {
     public static void main(String[] args) {
-        char[][] board = new char[][];
+        char[][] board = {
+    {'5','3','.','.','7','.','.','.','.'},
+    {'6','.','.','1','9','5','.','.','.'},
+    {'.','9','8','.','.','.','.','6','.'},
+    {'8','.','.','.','6','.','.','.','3'},
+    {'4','.','.','8','.','3','.','.','1'},
+    {'7','.','.','.','2','.','.','.','6'},
+    {'.','6','.','.','.','.','2','8','.'},
+    {'.','.','.','4','1','9','.','.','5'},
+    {'.','.','.','.','8','.','.','7','9'}
+};
         System.out.println(solve(board));
     }
 
@@ -29,7 +39,7 @@ public class Sudoku_solver {
         return true;
     }
 
-    static void isValid(char[][] board , int row , int col , char num){
+    static boolean isValid(char[][] board , int row , int col , char num){
         //no same number in row
         for(int j=0; j< 9 ; j++){
             if(board[row][j]==num){
@@ -39,7 +49,7 @@ public class Sudoku_solver {
 
         //no same num in col
         for(int i=0; i< 9 ; i++){
-            if board[i][col]==num;{
+            if (board[i][col]==num){
                 return false;
             }
         }

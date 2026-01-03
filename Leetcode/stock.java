@@ -19,3 +19,6 @@ public class stock {
         return profit;
     }
 }
+
+
+last non zero element approach 

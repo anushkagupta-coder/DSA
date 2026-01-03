@@ -25,3 +25,5 @@ public class Divisors_of_number {
         sc.close();
     }
 }
+
+

@@ -28,7 +28,7 @@ public class Sort_char_by_freq {
 
          //step 4 build result string 
          StringBuilder sb= new StringBuilder();
-         for(Char c: list){
+         for(char c: list){
             int freq  = map.get(c);
             for(int i=0;i<freq ;i++){
                 sb.append(c);

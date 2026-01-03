@@ -16,7 +16,7 @@ public class Sort_char_by_freq {
         HashMap<Character, Integer> map = new HashMap<>();
 
         //step1 count frequency
-        for(Char c : s.toCharArray()){
+        for(char c : s.toCharArray()){
             map.put(c,map.getOrDefault(c,0) +1);
         }
 

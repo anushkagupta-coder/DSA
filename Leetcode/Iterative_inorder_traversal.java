@@ -1,5 +1,6 @@
-import java.util.Stack;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 class Node{
     int val;
@@ -12,6 +13,14 @@ class Node{
 }
 public class Iterative_inorder_traversal {
     public static void main(String[] args) {
+         Node root = new Node(1);
+        root.right = new Node(2);
+        root.right.left = new Node(3);
+
+        List<Integer> result = inorder(root);
+        System.out.println(result);
+    }
+        static List<Integer> inorder(Node root){
         Stack<Node> stack = new Stack<>();
         List<Integer> result = new ArrayList<>();
 
@@ -27,7 +36,8 @@ public class Iterative_inorder_traversal {
 
         //go right
         curr=curr.right;
-        return result;
+      
         }
+          return result;
     }
 }

@@ -21,4 +21,7 @@ public class stock {
 }
 
 
-last non zero element approach 
+trappin grainwater 
+while(int a<length){
+    formalula
+}

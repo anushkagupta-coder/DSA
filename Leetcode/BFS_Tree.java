@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Queue;
 class Node{
     int val;
-    Node root;
     Node left;
     Node right;
     Node(int val){

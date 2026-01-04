@@ -9,23 +9,36 @@ class TreeNode {
     }
 }
 
-public class boundary_traversal {
+public class Boundary_traversal {
+public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.left.right.left = new TreeNode(7);
+        root.left.right.right = new TreeNode(8);
+        root.right.right = new TreeNode(6);
 
+        System.out.println(boundaryTraversal(root));
+    }
     public static List<Integer> boundaryTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
         if (root == null) return result;
 
-        // 1️⃣ Add root
-        result.add(root.val);
+        // ✅ Add root ONLY if it is not a leaf
+        if (!isLeaf(root)) {
+            result.add(root.val);
+        }
 
-        // 2️⃣ Left boundary
+        // Left boundary
         addLeftBoundary(root.left, result);
 
-        // 3️⃣ Leaf nodes
+        // Leaf nodes
         addLeaves(root, result);
 
-        // 4️⃣ Right boundary
+        // Right boundary
         addRightBoundary(root.right, result);
 
         return result;
@@ -83,16 +96,5 @@ public class boundary_traversal {
     }
 
     // TEST
-    public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.left.right = new TreeNode(5);
-        root.left.right.left = new TreeNode(7);
-        root.left.right.right = new TreeNode(8);
-        root.right.right = new TreeNode(6);
-
-        System.out.println(boundaryTraversal(root));
-    }
+    
 }

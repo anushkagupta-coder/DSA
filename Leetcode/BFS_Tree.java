@@ -25,7 +25,7 @@ public class BFS_Tree {
         for (List<Integer> level : levels) {
             System.out.println(level);
 
-            
+
     }
  static List<List<Integer>> levelOrder(Node root) {
         List<List<Integer>> result = new ArrayList<>();
@@ -56,6 +56,4 @@ public class BFS_Tree {
         return result;
     }
 }
-
-
-    
+}

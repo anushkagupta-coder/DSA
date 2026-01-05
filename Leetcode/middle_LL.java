@@ -40,6 +40,7 @@ public class middle_LL {
 
     static Node Middle(Node head){
         Node slow=head;
+        
         Node fast=head;
 
         while(fast!=null && fast.next!=null){

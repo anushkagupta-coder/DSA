@@ -55,6 +55,8 @@ public class Min_sum_subarray {
             st.push(i);
         }
 
+        //contibution
+
         long ans = 0;
         for (int i = 0; i < n; i++) {
             ans = (ans + (long) arr[i] * left[i] * right[i]) % mod;

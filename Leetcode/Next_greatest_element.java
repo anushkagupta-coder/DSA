@@ -1,3 +1,5 @@
+//to find which one is the next greatest element
+
 import java.util.Stack;
 
 public class Next_greatest_element {

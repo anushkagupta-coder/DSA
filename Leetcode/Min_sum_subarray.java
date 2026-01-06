@@ -4,6 +4,8 @@
 //left and right diatance kaha se aayenege toh woh hota hai next smaller element and previous samller element se 
 //how so look agar sammler hai toh woh utni baar aayega contribution me 
 
+
+
 import java.util.Stack;
 
 public class Min_sum_subarray {
@@ -18,7 +20,7 @@ public class Min_sum_subarray {
         int n=arr.length;
         int mod=(int) 1e9 + 7;
 
-        
+
         int[] left =new int[n];
         int[] right=new int[n];
         Stack<Integer> st=new Stack<>();

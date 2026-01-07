@@ -79,7 +79,6 @@ public class LRU_DLLandMap {
             map.put(key, newNode);
         }
     }
-// test
     public static void main(String[] args) {
         LRU_DLLandMap lru = new LRU_DLLandMap(2);
 

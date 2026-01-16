@@ -1,3 +1,5 @@
+//balanced binary tree
+
 class TreeNode{
     int val;
     TreeNode right;
@@ -13,7 +15,6 @@ public class Balanced_binary_tree {
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
-
         System.out.println(isBalanced(root)); // true / false
     }
 
@@ -23,6 +24,7 @@ public class Balanced_binary_tree {
 
     static int height(TreeNode curr){
         if(curr==null)
+
             return 0;
 
     

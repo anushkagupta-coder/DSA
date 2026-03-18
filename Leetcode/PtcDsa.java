@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Stack;
 
 public class PtcDsa {
     public static void main(String[] args){
@@ -32,8 +33,11 @@ public class PtcDsa {
         int[] arr= {1,1,2,4,4,4,4};
         System.out.println(MajorityElement(arr));
         System.out.println(firstNonrepeatingcharacter("leetcode"));
-        System.out.println(firstNonrepeatingcharacter("anushka"));*/
+        System.out.println(firstNonrepeatingcharacter("anushka"));
         System.out.println(Fibonacci(7));
+        System.out.println(ValidParenthesis("{[]}"));*/
+        int[] arr = {-2,1,-3,4,5};
+        System.out.println(KadanesAlgorithm(arr));
     }
 
     public static int[] TwoSum(int[] arr,int target){
@@ -269,8 +273,34 @@ public class PtcDsa {
 
     }
 
-    public static int ValidParenthesis(){
-
+    public static boolean ValidParenthesis(String str){
+        //stack pehle push then pop same element aya toh pop
+        Stack<Character> st = new Stack<>();
+        for(char bracket : str.toCharArray()){
+            if(bracket=='{' || bracket=='[' || bracket=='('){
+                st.push(bracket);
+            }
+            else{
+                if(st.isEmpty()) return false;
+                char top=st.pop();
+                if((bracket == ')' && top != '(') ||
+               (bracket == '}' && top != '{') ||
+               (bracket == ']' && top != '[')){
+                return false;
+            } 
+        }
     }
+    return st.isEmpty();
 }
 
+    public static int KadanesAlgorithm(int[] arr){
+        int currsum=0;
+        int maxsum=Integer.MIN_VALUE;
+        for(int num:arr){
+            currsum = Math.max(num , num + currsum);
+            maxsum = Math.max(currsum, maxsum);
+        }
+        return maxsum ;
+        
+    }
+}

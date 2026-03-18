@@ -25,10 +25,15 @@ public class PtcDsa {
         int[] merged = MergeTwoSortedArrays(arr1, arr2);
         System.out.println(Arrays.toString(merged));
         int[] arr= {0,1,3,4,5};
-        System.out.println(findMissingNumber(arr));*/
+        System.out.println(findMissingNumber(arr));
         String str="I love Myself";
         System.out.println(ReverseWords(str));
-
+        System.out.println(PalindromeNumber(1212));
+        int[] arr= {1,1,2,4,4,4,4};
+        System.out.println(MajorityElement(arr));
+        System.out.println(firstNonrepeatingcharacter("leetcode"));
+        System.out.println(firstNonrepeatingcharacter("anushka"));*/
+        System.out.println(Fibonacci(7));
     }
 
     public static int[] TwoSum(int[] arr,int target){
@@ -196,10 +201,76 @@ public class PtcDsa {
         return result.trim();
     }
 
-    public static PalindromeNumber(int num){
+    public static boolean PalindromeNumber(int num){
+        int original=num;
+        int reverse = 0;
+        while (num>0){
+        int digit=num%10;
+        reverse = reverse*10 + digit ;
+        num=num/10;
+    }
+        if(reverse==original){
+            return true ;
+        }
+        else {
+            return false;
+        }
 
     }
 
-}
+    public static int MajorityElement(int[] arr){
+        //this is candidate and vote question
+        int candidate=0;
+        int vote=0;
+        for(int num : arr){
+            if(vote==0){
+                candidate=num;
+            }
+            if(num==candidate){
 
+                vote++;
+            }
+            else{
+                vote--;
+            }
+        }
+        return candidate;
+    }
+
+    public static char firstNonrepeatingcharacter(String str){
+        //leetcode ans is l;
+        //we could use ahshmap but array freq is more nice acc to chatgpt
+        int[] freq=new int[26];
+
+        for(char ch : str.toCharArray()){
+            freq[ch-'a']++;
+        }
+
+        for(char ch : str.toCharArray()){
+            if(freq[ch - 'a'] == 1){
+                return ch;
+            }
+        }
+        return '#';
+    }
+
+    public static int Fibonacci(int n){
+        if (n == 0)return 0;
+        if (n == 1)return 1;
+
+        int prev1=0;
+        int prev2=1;
+        for(int i=2;i<=n;i++){
+            int fibonacci = prev1+prev2;
+            prev1 = prev2;
+            prev2 = fibonacci;
+        }
+        return prev2;
+
+    }
+
+    public static int ValidParenthesis(){
+
+    }
+}
 
